@@ -8,20 +8,24 @@
 </head>
 <body class="bg-gradient-to-r from-violet-200 to-pink-200">
     <div class="container flex flex-col justify-center items-center">
-        <div class="contactform px-20 mt-20 mb-10 flex flex-col justify-center items-center p-10 bg-gradient-to-r from-violet-400 to-blue-300 rounded-2xl">
+        <form class="contactform px-20 mt-20 mb-10 flex flex-col justify-center items-center p-10 bg-gradient-to-r from-violet-400 to-blue-300 rounded-2xl">
             <h3 class="mb-6 font-serif text-2xl">Contacts</h3>
           <div class="details flex flex-col items-center justify-center pb-6">
-            <input type="text" placeholder="Name" class="name mb-6 px-3 py-1 border-2 rounded  border-red-950 bg-white font-serif"> 
-            <input type="number" class="phone_no px-3 py-1 border-2 rounded bg-white items-center font-serif" placeholder="Phone Number">
-           </div>
+            <input type="text" placeholder="Name" class="name mb-6 px-3 py-1 border-2 rounded  border-red-950 bg-white font-serif" required> 
+            <input type="tel" class="phone_no px-3 py-1 border-2 rounded bg-white items-center font-serif" placeholder="Phone Number" required>
+          </div>
 
-            <button class="save font-serif text-white bg-stone-600 px-8 py-1 rounded-2xl">Save</button>
-        </div>
+            <button type="submit" id="save" class="save font-serif text-white bg-stone-600 px-8 py-1 rounded-2xl hover:transition hover:duration-300 hover:ease-in-out hover:1s hover:bg-yellow-200 hover:scale-x-110 hover:dark:text-black">Save</button>
+        </form>
 
-        <div class="details bg-amber-50 ">
-           <ul class="user_details">
-            <li>Hllo</li>
-            <li></li>
+        <div class="details px-40 border-2 flex flex-col  h-96">
+            <div class="search  mt-4 px-10 mb-8 ">
+                <input type="search" id="search" class="bg-white border-2 rounded-2xl py-2  px-8 w-l" placeholder="Search">
+            </div>
+
+            <h1 class="items-center mb-4 font-serif text-2xl">Contacts</h4>
+           <ul class="user_details mt-5">
+            
            </ul>
         </div>
     </div>
